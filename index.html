@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rook &amp; Lime — Hand-applied lime plaster, London</title>
+  <meta name="description" content="Rook &amp; Lime is a small London studio creating hand-applied lime plaster finishes for architect-led homes, restaurants and boutique spaces. Request a material consultation by email.">
+  <meta name="theme-color" content="#14130f">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rook &amp; Lime">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Rook &amp; Lime — Lime plaster, trowelled by hand">
+  <meta property="og:description" content="Hand-applied lime plaster finishes for architect-led homes, restaurants and boutique spaces in London.">
+  <meta property="og:image" content="/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A monolith of lime plaster coats lit by a raking light: rough substrate, scored scratch coat, base coat and a burnished lime finish.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rook &amp; Lime — Lime plaster, trowelled by hand">
+  <meta name="twitter:description" content="Hand-applied lime plaster finishes for architect-led homes, restaurants and boutique spaces in London.">
+  <meta name="twitter:image" content="/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/fraunces-latin-soft-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+    /* Decide the layout mode before first paint so nothing shifts later. */
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var save = navigator.connection && navigator.connection.saveData;
+        if (!calm && !save) d.classList.add('is-scrolly');
+      } catch (e) {}
+    })();
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-tone="dark">
+    <div class="site-header__bar">
+      <a class="wordmark" href="#top" aria-label="Rook &amp; Lime — back to top">
+        <span class="wordmark__mark" aria-hidden="true"></span>
+        <span class="wordmark__text">Rook <em>&amp;</em> Lime</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#coats">The coats</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#surfaces">Surfaces</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#material">Material</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--header" href="mailto:studio@rookandlime.example?subject=Material%20consultation%20request">
+        <span class="btn__long">Request a consultation</span><span class="btn__short">Enquire</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ STAGE: hero + the wall in coats ============ -->
+    <section class="stage" id="top" aria-labelledby="hero-title" data-tone="dark">
+      <span class="stage__anchor" id="coats-anchor"></span>
+      <div class="stage__pin">
+        <div class="stage__bg" aria-hidden="true"></div>
+
+        <div class="stage__visual" aria-hidden="true">
+          <div class="poster">
+            <div class="poster__stack">
+              <div class="poster__layer poster__layer--0"></div>
+              <div class="poster__layer poster__layer--1"></div>
+              <div class="poster__layer poster__layer--2"></div>
+              <div class="poster__layer poster__layer--3"></div>
+            </div>
+          </div>
+          <canvas class="stage__canvas" width="300" height="150"></canvas>
+        </div>
+
+        <div class="hero">
+          <p class="eyebrow">Hand-applied lime plaster &nbsp;·&nbsp; London</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Lime plaster,</span>
+            <span class="hero__line">trowelled</span>
+            <span class="hero__line">by hand.</span>
+          </h1>
+          <p class="hero__lede">A small London studio making finished lime walls for architect-led homes, restaurants and boutique spaces.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:studio@rookandlime.example?subject=Material%20consultation%20request">Request a material consultation</a>
+            <a class="link-arrow" href="#coats">See how a wall is built</a>
+          </div>
+        </div>
+
+        <div class="coats-wrap">
+          <h2 class="coats__heading">A wall, built in coats</h2>
+          <ol class="coats" id="coats">
+            <li class="coat" data-coat="1">
+              <span class="coat__num">01</span>
+              <h3 class="coat__title">Substrate &amp; key</h3>
+              <p>The wall is cleaned, dampened and given tooth. The first coat is coarse, sandy and deliberately rough, so everything laid over it has something to hold.</p>
+              <p class="coat__tag">Reads as: open, aggregate-rich, matt</p>
+            </li>
+            <li class="coat" data-coat="2">
+              <span class="coat__num">02</span>
+              <h3 class="coat__title">Scratch coat</h3>
+              <p>Combed while it is still green. The scoring is not decoration; it is the mechanical key that locks the next coat to this one.</p>
+              <p class="coat__tag">Reads as: scored, cross-hatched, ridged</p>
+            </li>
+            <li class="coat" data-coat="3">
+              <span class="coat__num">03</span>
+              <h3 class="coat__title">Base coat</h3>
+              <p>Built out with a straightedge, then floated. Flatness is decided here, well before anyone sees the finish.</p>
+              <p class="coat__tag">Reads as: fine, sandy, even</p>
+            </li>
+            <li class="coat" data-coat="4">
+              <span class="coat__num">04</span>
+              <h3 class="coat__title">Lime finish</h3>
+              <p>A thin skin, trowelled and burnished in passes. Every arc of the steel stays legible when raking light crosses the wall.</p>
+              <p class="coat__tag">Reads as: burnished, cloudy, trowel-marked</p>
+            </li>
+          </ol>
+          <p class="coats__note">Illustrative build-up. Final specification is set per wall.</p>
+        </div>
+
+        <div class="stage__meter" aria-hidden="true">
+          <span class="meter__tick" data-tick="1"><i>01</i> Substrate</span>
+          <span class="meter__tick" data-tick="2"><i>02</i> Scratch</span>
+          <span class="meter__tick" data-tick="3"><i>03</i> Base</span>
+          <span class="meter__tick" data-tick="4"><i>04</i> Finish</span>
+        </div>
+
+        <div class="stage__cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+        <div class="stage__wash" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ STUDIO ============ -->
+    <section class="section studio" id="studio" aria-labelledby="studio-title" data-tone="light">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--ink" data-reveal>The studio</p>
+        <h2 class="statement" id="studio-title" data-reveal>Lime does not hide the hand that laid&nbsp;it. We design for&nbsp;that.</h2>
+        <div class="studio__cols">
+          <div data-reveal>
+            <h3 class="label">What we make</h3>
+            <p>Hand-applied lime plaster finishes: burnished, trowelled, sand-textured and limewashed surfaces for walls, ceilings, niches, chimney breasts and bar fronts.</p>
+          </div>
+          <div data-reveal>
+            <h3 class="label">Who we work with</h3>
+            <p>Architects and interior designers specifying surfaces for private houses, restaurants and boutique spaces, and the owners who commission them. Based in London.</p>
+          </div>
+          <div data-reveal>
+            <h3 class="label">How it starts</h3>
+            <p>With a conversation about the wall, the light that falls on it and the finish you have in mind. The first step is a material consultation, requested by email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SURFACES ============ -->
+    <section class="section surfaces" id="surfaces" aria-labelledby="surfaces-title" data-tone="light">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--ink" data-reveal>Selected surfaces</p>
+            <h2 class="display-2" id="surfaces-title" data-reveal>Four rooms,<br>four kinds of light.</h2>
+          </div>
+          <p class="section-head__note" data-reveal>Illustrative studies made for this concept, not completed commissions. Move a pointer across a surface to move the light.</p>
+        </header>
+
+        <div class="plates">
+          <figure class="plate plate--stair" data-reveal>
+            <div class="plate__surface" data-finish="stair" role="img" aria-label="Study of a pale burnished lime wall with a tall arched niche and a shaft of daylight.">
+              <div class="plate__niche" aria-hidden="true"></div>
+              <div class="plate__shaft" aria-hidden="true"></div>
+              <div class="plate__light" aria-hidden="true"></div>
+            </div>
+            <figcaption><span class="cap-num">Study 01</span><strong>Stair hall</strong><span>Architect-led house · burnished lime, pale stone</span></figcaption>
+          </figure>
+
+          <figure class="plate plate--fitting" data-reveal>
+            <div class="plate__surface" data-finish="fitting" role="img" aria-label="Study of a soft sage-grey trowelled lime wall with a tall mirror opening.">
+              <div class="plate__mirror" aria-hidden="true"></div>
+              <div class="plate__light" aria-hidden="true"></div>
+            </div>
+            <figcaption><span class="cap-num">Study 02</span><strong>Fitting room</strong><span>Boutique · trowelled lime, sage-grey</span></figcaption>
+          </figure>
+
+          <figure class="plate plate--hearth" data-reveal>
+            <div class="plate__surface" data-finish="hearth" role="img" aria-label="Study of a dark charcoal lime chimney breast with scored horizontal lines and a low hearth slab.">
+              <div class="plate__hearth" aria-hidden="true"></div>
+              <div class="plate__light" aria-hidden="true"></div>
+            </div>
+            <figcaption><span class="cap-num">Study 03</span><strong>Chimney breast</strong><span>Private house · scored lime, charcoal pigment</span></figcaption>
+          </figure>
+          <figure class="plate plate--bar" data-reveal>
+            <div class="plate__surface" data-finish="bar" role="img" aria-label="Study of a warm, sand-textured lime bar front with a dark counter edge and a pendant glow.">
+              <div class="plate__counter" aria-hidden="true"></div>
+              <div class="plate__pendant" aria-hidden="true"></div>
+              <div class="plate__light" aria-hidden="true"></div>
+            </div>
+            <figcaption><span class="cap-num">Study 04</span><strong>Bar front</strong><span>Restaurant · sand-textured lime, earth pigment</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process" aria-labelledby="process-title" data-tone="stone">
+      <div class="wrap process__grid">
+        <div class="process__intro">
+          <p class="eyebrow eyebrow--ink" data-reveal>Process</p>
+          <h2 class="display-2" id="process-title" data-reveal>From a message to a finished wall.</h2>
+          <p class="process__note" data-reveal>An outline of how a project can run. Stages and sequence are set with you, around the wider build.</p>
+          <a class="link-arrow link-arrow--ink" href="mailto:studio@rookandlime.example?subject=Material%20consultation%20request" data-reveal>Start with a consultation</a>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <div>
+              <h3>Brief</h3>
+              <p>You send drawings or photographs, the finish you have in mind and a description of the light in the room.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">02</span>
+            <div>
+              <h3>Samples</h3>
+              <p>Sample boards let you judge tone, texture and sheen against your own materials and daylight, not a catalogue photograph.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">03</span>
+            <div>
+              <h3>Specification</h3>
+              <p>We agree substrate preparation, coats, finish, protection and sequencing with the architect and the wider build team.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">04</span>
+            <div>
+              <h3>Application</h3>
+              <p>Each coat is built by hand, wall by wall, and given the time it needs before the next one goes on.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">05</span>
+            <div>
+              <h3>Cure &amp; care</h3>
+              <p>Guidance on protecting the surface while it cures and living with it afterwards, including how small repairs are made.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ MATERIAL ============ -->
+    <section class="section material" id="material" aria-labelledby="material-title" data-tone="dark">
+      <div class="wrap">
+        <header class="section-head section-head--dark">
+          <div>
+            <p class="eyebrow" data-reveal>Material story</p>
+            <h2 class="display-2" id="material-title" data-reveal>Four ingredients.<br>One of them is time.</h2>
+          </div>
+          <p class="section-head__note" data-reveal>Lime plaster is old, simple and unforgiving. The simplicity is what makes the finish possible.</p>
+        </header>
+
+        <ul class="specimens">
+          <li class="specimen" data-reveal>
+            <div class="specimen__swatch" data-swatch="putty" role="img" aria-label="Macro study of smooth lime putty surface"></div>
+            <span class="specimen__fig">Fig. A</span>
+            <h3>Lime putty</h3>
+            <p>Slaked lime, matured as a putty. It is the binder, and the reason a surface can be worked wet, burnished and repaired later.</p>
+          </li>
+          <li class="specimen" data-reveal>
+            <div class="specimen__swatch" data-swatch="aggregate" role="img" aria-label="Macro study of coarse sand aggregate"></div>
+            <span class="specimen__fig">Fig. B</span>
+            <h3>Aggregate</h3>
+            <p>Sand or crushed stone, graded to the finish: coarse for a textured surface, fine for a burnished skin.</p>
+          </li>
+          <li class="specimen" data-reveal>
+            <div class="specimen__swatch" data-swatch="pigment" role="img" aria-label="Macro study of earth-pigmented lime"></div>
+            <span class="specimen__fig">Fig. C</span>
+            <h3>Pigment</h3>
+            <p>Natural earth pigments, when colour is wanted. The colour lives in the body of the plaster rather than on its surface.</p>
+          </li>
+          <li class="specimen" data-reveal>
+            <div class="specimen__swatch" data-swatch="time" role="img" aria-label="Macro study of a cured, scored lime surface"></div>
+            <span class="specimen__fig">Fig. D</span>
+            <h3>Water &amp; time</h3>
+            <p>Lime hardens by taking carbon dioxide from the air. It cannot be rushed, so the programme has to make room for it.</p>
+          </li>
+        </ul>
+
+        <div class="material__foot">
+          <div data-reveal>
+            <h3 class="label label--dark">What it gives a room</h3>
+            <ul class="plain-list">
+              <li><strong>Vapour-open.</strong> Lime walls can exchange moisture with the air, which suits older buildings.</li>
+              <li><strong>Repairable.</strong> Damage can be patched and blended rather than replaced.</li>
+              <li><strong>Depth.</strong> Polish and pigment read differently through the day, from raking light to lamplight.</li>
+            </ul>
+          </div>
+          <div data-reveal>
+            <h3 class="label label--dark">Tools of the trade</h3>
+            <p class="tools">Steel trowel, hawk, wooden float, scratch comb, straightedge, sponge, burnishing steel, and a lot of clean buckets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTATION ============ -->
+    <section class="section consult" id="consultation" aria-labelledby="consult-title" data-tone="light">
+      <div class="consult__panel" aria-hidden="true"></div>
+      <div class="wrap consult__grid">
+        <div>
+          <p class="eyebrow eyebrow--ink" data-reveal>Material consultation</p>
+          <h2 class="consult__title" id="consult-title" data-reveal>Send us<br>the wall.</h2>
+          <p class="consult__lede" data-reveal>Tell us what the room is, what the light does in it and what finish you are imagining. We will reply about a material consultation.</p>
+          <div class="consult__actions" data-reveal>
+            <a class="btn btn--primary btn--large" id="cta-mail" href="mailto:studio@rookandlime.example?subject=Material%20consultation%20request&amp;body=Hello%20Rook%20%26%20Lime%2C%0A%0AProject%20type%20(home%20%2F%20restaurant%20%2F%20boutique)%3A%0ALocation%20in%20London%3A%0AArchitect%20or%20designer%3A%0ASurfaces%20and%20approximate%20areas%3A%0AFinish%20references%20or%20photographs%3A%0ATiming%3A%0A">Request a material consultation</a>
+            <button class="btn btn--ghost" type="button" id="copy-mail" data-email="studio@rookandlime.example">
+              <span data-copy-label>Copy email address</span>
+            </button>
+          </div>
+          <p class="consult__email" data-reveal><a href="mailto:studio@rookandlime.example">studio@rookandlime.example</a></p>
+          <p class="consult__status" role="status" aria-live="polite" id="copy-status"></p>
+        </div>
+        <aside class="consult__list" data-reveal aria-labelledby="send-title">
+          <h3 class="label" id="send-title">Helpful to include</h3>
+          <ul class="plain-list plain-list--ruled">
+            <li>Type of space and where in London it is</li>
+            <li>Plans, elevations or clear photographs of the walls</li>
+            <li>The architect or designer, if there is one</li>
+            <li>Finish references, however rough</li>
+            <li>Roughly when the work needs to happen</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-tone="dark">
+    <div class="wrap site-footer__grid">
+      <div>
+        <p class="site-footer__mark">Rook <em>&amp;</em> Lime</p>
+        <p class="site-footer__line">Hand-applied lime plaster finishes.<br>London.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="site-footer__nav">
+          <li><a href="#coats">The coats</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#surfaces">Surfaces</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#material">Material</a></li>
+          <li><a href="mailto:studio@rookandlime.example?subject=Material%20consultation%20request">Email the studio</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__fine">Design concept. Business details, contact address, project studies and process descriptions are provisional and will be replaced with confirmed information.</p>
+    </div>
+  </footer>
+</body>
+</html>

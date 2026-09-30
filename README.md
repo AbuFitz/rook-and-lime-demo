@@ -1,15 +1,36 @@
-# Claude isolation test
+# Rook & Lime — immersive concept site
 
-This repository is reserved for the Claude Code forward-test of the `onesimplesite-web-designer` skill.
-
-The test uses `--no-session-persistence`: it does not resume, inspect, or save a Claude conversation. It passes the sibling skill directory explicitly, so the test exercises the exact version in this workspace rather than relying on global skill discovery. Claude is allowed to write only inside this isolated repository during the test.
+A one-page concept site for a fictional London lime-plaster studio, built as a test of the
+`onesimplesite-web-designer` skill in **Immersive** gear. All business facts are provisional.
 
 ## Run
 
-Authenticate Claude Code first, then run from this directory:
-
 ```bash
-./run-claude-test.sh
+npm install
+npm run dev       # development
+npm run build     # production build to dist/
+npm run preview   # serve the production build
 ```
 
-The detailed brief is in `BRIEF.md`. The runner is safe to rerun after a partial attempt and records Claude's output in the ignored `CLAUDE_RUN.log` file for diagnosis. After generation, the result must be built, rendered at mobile and desktop widths, audited, and iterated before it counts as a successful skill test.
+## What is where
+
+- `index.html` — all content, semantic landmarks, metadata, skip link.
+- `src/main.js` — scroll timeline, navigation, reveals, clipboard, lazy texture painting.
+- `src/lib/timeline.js` — one scroll timeline shared by the CSS poster and the WebGL scene.
+- `src/lib/scene.js` — the Three.js monolith (loaded on demand as its own chunk).
+- `src/lib/plaster.js` + `plaster.worker.js` — procedural plaster surfaces, painted in a worker. No image files.
+- `src/styles/` — tokens and type (`base.css`), hero/scroll stage (`stage.css`), sections (`sections.css`).
+- `public/` — favicon, self-hosted variable fonts, `og.png` (captured from the hero), `robots.txt`.
+
+## Fallbacks
+
+The hero is a composed HTML/CSS poster first; the WebGL layer fades in over it. Without WebGL, with
+reduced motion or with data-saver on, the poster (and a static list of the four coats) is the design.
+
+## Handoff: what the client must supply
+
+- Real email address (currently `studio@rookandlime.example`) and any phone or studio address.
+- Real project photography; the four "studies" and material swatches are procedural illustrations.
+- Process wording, materials and tools are generic and should be checked by the studio.
+- Absolute URL for `og:image` / canonical once a domain exists (`/og.png` is relative for now).
+- No form: the conversion is a `mailto:` link with a pre-filled brief. Delivery depends on the visitor's mail client.
